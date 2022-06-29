@@ -62,7 +62,42 @@ namespace calcTest
             result = calc._bRavno_Click(a, b, 5);
             Assert.AreEqual(expected, result);
         }
-        
+        [TestMethod]
+        public void TestMethodSin()
+        {
+            Operations operation = new Operations();
+            double a = 1;
+            double expected = 0.8415; double result;
+            result = operation.sin(a);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void TestMethodCos()
+        {
+            Operations operation = new Operations();
+            double a = 1;
+            double expected = 0.5403; double result;
+            result = operation.cos(a);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void TestMethodTan()
+        {
+            Operations operation = new Operations();
+            double a = 1;
+            double expected = 1.5574; double result;
+            result = operation.tan(a);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void TestMethodCot()
+        {
+            Operations operation = new Operations();
+            double a = 1;
+            double expected = 0.6421; double result;
+            result = operation.cot(a);
+            Assert.AreEqual(expected, result);
+        }
     }
     
 }
